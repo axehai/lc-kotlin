@@ -1,4 +1,4 @@
-package lc.problems.lc424
+package lc.sliding_window.lc424
 
 import com.axehai.lc.sliding_window.lc424.Solution
 import kotlin.test.Test
