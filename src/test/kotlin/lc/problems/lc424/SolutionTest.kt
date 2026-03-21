@@ -1,6 +1,6 @@
 package lc.problems.lc424
 
-import com.axehai.lc.sliding_window.lc424.problems.Solution
+import com.axehai.lc.sliding_window.lc424.Solution
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
