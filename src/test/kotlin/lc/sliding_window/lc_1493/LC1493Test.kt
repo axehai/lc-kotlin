@@ -1,6 +1,6 @@
-package lc.sliding_window.lc1493
+package lc.sliding_window.lc_1493
 
-import com.axehai.lc.sliding_window.lc1493.LC1493
+import com.axehai.lc.sliding_window.lc_1493.LC1493
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

@@ -1,4 +1,4 @@
-package com.axehai.lc.sorting.lc56
+package com.axehai.lc.sorting.lc_56
 
 import kotlin.emptyArray
 

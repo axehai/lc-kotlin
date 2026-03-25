@@ -1,4 +1,4 @@
-package com.axehai.lc.sliding_window.lc1004
+package com.axehai.lc.sliding_window.lc_1004
 
 class LC1004 {
     fun longestOnes(nums: IntArray, k: Int): Int {

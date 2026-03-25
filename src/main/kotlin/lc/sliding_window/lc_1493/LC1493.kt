@@ -1,4 +1,4 @@
-package com.axehai.lc.sliding_window.lc1493
+package com.axehai.lc.sliding_window.lc_1493
 
 class LC1493 {
     fun longestSubarray(nums: IntArray): Int {

@@ -1,4 +1,4 @@
-package com.axehai.lc.sliding_window.lc3
+package com.axehai.lc.sliding_window.lc_3
 
 class LC3 {
     fun lengthOfLongestSubstring(s: String): Int {

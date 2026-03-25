@@ -1,6 +1,6 @@
-package lc.sorting.lc2418
+package lc.sorting.lc_2418
 
-import com.axehai.lc.sorting.lc2418.LC2418
+import com.axehai.lc.sorting.lc_2418.LC2418
 import kotlin.test.Test
 import kotlin.test.assertContentEquals
 

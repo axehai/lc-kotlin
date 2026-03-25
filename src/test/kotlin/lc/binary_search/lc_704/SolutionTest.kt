@@ -1,6 +1,6 @@
-package lc.binary_search.lc704
+package lc.binary_search.lc_704
 
-import com.axehai.lc.binary_search.lc704.Solution
+import com.axehai.lc.binary_search.lc_704.Solution
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

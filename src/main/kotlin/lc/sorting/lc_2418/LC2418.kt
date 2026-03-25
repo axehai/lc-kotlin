@@ -1,4 +1,4 @@
-package com.axehai.lc.sorting.lc2418
+package com.axehai.lc.sorting.lc_2418
 
 class LC2418 {
     fun sortPeople(names: Array<String>, heights: IntArray): Array<String> {

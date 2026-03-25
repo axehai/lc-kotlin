@@ -1,4 +1,4 @@
-package com.axehai.lc.binary_search.lc704
+package com.axehai.lc.binary_search.lc_704
 
 class Solution {
     fun search(nums: IntArray, target: Int): Int {

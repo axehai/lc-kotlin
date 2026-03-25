@@ -1,4 +1,4 @@
-package com.axehai.lc.sliding_window.lc424
+package com.axehai.lc.sliding_window.lc_424
 
 class Solution {
     fun characterReplacement(s: String, k: Int): Int {

@@ -1,6 +1,6 @@
-package lc.sorting.lc56
+package lc.sorting.lc_56
 
-import com.axehai.lc.sorting.lc56.LC56
+import com.axehai.lc.sorting.lc_56.LC56
 import kotlin.test.Test
 import kotlin.test.assertTrue
 
