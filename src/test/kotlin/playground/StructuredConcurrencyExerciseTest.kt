@@ -19,7 +19,6 @@ class StructuredConcurrencyExerciseTest {
     private val exercise = StructuredConcurrencyExercise()
 
     @Test
-    @Ignore
     fun prepareLunch_runsRiceAndChickenConcurrently() = runTest {
         val kitchen = FakeKitchen(now = { testScheduler.currentTime })
 
