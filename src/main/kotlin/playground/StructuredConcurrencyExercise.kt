@@ -28,11 +28,12 @@ class StructuredConcurrencyExercise {
         val riceDeferred = async { station.cookRice() }
         val chickenDeferred = async { station.cookChicken() }
         Lunch(riceDeferred.await(), chickenDeferred.await())
-
     }
 
-    suspend fun prepareLunchFailFast(station: KitchenStation): Lunch {
-        TODO("Use structured concurrency so a chicken failure cancels the rice sibling.")
+    suspend fun prepareLunchFailFast(station: KitchenStation): Lunch = coroutineScope {
+        val riceDeferred = async { station.cookRice() }
+        val chickenDeferred = async { station.cookChicken() }
+        Lunch(riceDeferred.await(), chickenDeferred.await())
     }
 
     suspend fun prepareLunchSupervised(station: KitchenStation): LunchReport {
