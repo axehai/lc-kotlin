@@ -62,7 +62,6 @@ class StructuredConcurrencyExerciseTest {
     }
 
     @Test
-    @Ignore
     fun prepareLunchSupervised_allowsRiceToFinishWhenChickenFails() = runTest {
         val kitchen = FakeKitchen(
             now = { testScheduler.currentTime },

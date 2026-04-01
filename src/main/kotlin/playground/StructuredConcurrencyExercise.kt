@@ -1,10 +1,9 @@
 package com.axehai.playground
 
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.supervisorScope
 
 interface KitchenStation {
     suspend fun cookRice(): String
@@ -36,7 +35,30 @@ class StructuredConcurrencyExercise {
         Lunch(riceDeferred.await(), chickenDeferred.await())
     }
 
-    suspend fun prepareLunchSupervised(station: KitchenStation): LunchReport {
-        TODO("Use supervisorScope so chicken failure does not cancel rice.")
+    suspend fun prepareLunchSupervised(station: KitchenStation): LunchReport = supervisorScope {
+        val riceDeferred = async { station.cookRice() }
+        val chickenDeferred = async { station.cookChicken() }
+        val errorList = mutableListOf<String>()
+
+        val rice = try {
+            riceDeferred.await()
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Exception) {
+            errorList.add(e.message?:"unknown rice error")
+            null
+        }
+
+        val chicken = try {
+            chickenDeferred.await()
+        }catch (e: CancellationException){
+            throw e
+        }
+        catch (e: Exception) {
+            errorList.add(e.message ?: "unknown chicken error")
+            null
+        }
+
+        LunchReport(rice, chicken, errorList)
     }
 }
