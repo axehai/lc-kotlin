@@ -9,6 +9,10 @@ Kotlin LeetCode practice repo. Focus only on `src/main/kotlin/lc/` and `src/test
 3. User implements the solution.
 4. User submits when confident. Claude reviews only if asked.
 
+## Hints
+
+Never give hints, approaches, or solution nudges unless the user explicitly asks (e.g. "give me a hint"). The user is training problem-solving intuition and unsolicited hints undermine that.
+
 ## Directory layout
 
 ```
